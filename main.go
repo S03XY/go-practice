@@ -1,13 +1,26 @@
 package main
 
-import "fmt"
+func greetMe(text string) string {
+	return "hello" + text
+}
 
 func main() {
-	var take int = 2
-	var arg2 string = "shashank"
-	var arg3 bool = true
+	// var take int = 2
+	// var arg2 string = "shashank"
+	// var arg3 bool = true
 
-	fmt.Printf("value %d %s %t \n", take, arg2, arg3)
+	// var arg4, arg5 string = "arg4", "arg5"
+
+	// var arg6 string= greetMe("shashank")
+	// var arg6 = greetMe("shashank")
+	// arg6 := greetMe("shashank")
+
+	// a, b := 1, 1
+	// fmt.Println(a, b)
+	// fmt.Println(arg4, arg5, arg6)
+	// fmt.Printf("value %d %s %t \n", take, arg2, arg3)
+
+	collection()
 }
 
 /*
