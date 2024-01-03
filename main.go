@@ -21,7 +21,8 @@ func main() {
 	// fmt.Printf("value %d %s %t \n", take, arg2, arg3)
 
 	// collection()
-	Tut2()
+	// Tut2()
+	Tut3()
 }
 
 /*
