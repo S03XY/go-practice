@@ -36,6 +36,31 @@ func (r Rectangle) Perimeter() float64 {
 	return 2 * (r.height + r.width)
 }
 
+// inherittance
+
+type Animal struct {
+	Breed string
+}
+
+func (a Animal) GetBreed() string {
+	return a.Breed
+}
+
+// struct can store struct but then the access should be different
+
+type Dog struct {
+	Animal
+	Legs int
+}
+
+func (d Dog) GetBreed() string {
+	return d.Breed
+}
+
+func (d Dog) GetLegs() int {
+	return d.Legs
+}
+
 func Tut2() {
 	fmt.Println("from tut2")
 
@@ -73,6 +98,10 @@ func Tut2() {
 
 	fmt.Println("area", reactangle.Area())
 	fmt.Println("perimeter", reactangle.Perimeter())
+
+	a := Animal{Breed: "dog"}
+	d := Dog{Legs: 4, Animal: a}
+	fmt.Println(d.GetBreed())
 
 }
 
