@@ -20,7 +20,8 @@ func main() {
 	// fmt.Println(arg4, arg5, arg6)
 	// fmt.Printf("value %d %s %t \n", take, arg2, arg3)
 
-	collection()
+	// collection()
+	Tut2()
 }
 
 /*

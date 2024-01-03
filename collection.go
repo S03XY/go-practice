@@ -70,13 +70,33 @@ func collection() {
 	// 	some3 int
 	// )
 
-	_, b := multiple_return()
+	// _, b := multiple_return()
 
 	// _ is used to ignore the values
-	fmt.Printf("%s \n", b)
+	// fmt.Printf("%s \n", b)
+
+	// value := return_ref()
+	// fmt.Printf("%s \n", *value)
+
+	// deffered function execute the the end of the scope and order of execution is accorging to stack first in last out
+	// defer func() {
+	// 	fmt.Println("deferred function 1")
+	// }()
+
+	// defer func() {
+	// 	fmt.Println("deferred function 2")
+	// }()
+
+	// fmt.Println("normal call")
 
 }
 
-func multiple_return() (string, string) {
-	return "shashank", "pandey"
-}
+// func multiple_return() (string, string) {
+// 	return "shashank", "pandey"
+// }
+
+// in go we can return a reference in a function
+// func return_ref() *string {
+// 	a := "Shashank"
+// 	return &a
+// }
